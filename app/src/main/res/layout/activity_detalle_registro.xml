@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DetalleRegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Imagen del usuario de perfil-->
+        <ImageView
+            android:id="@+id/profileIv3"
+            android:layout_width="211dp"
+            android:layout_height="177dp"
+            android:layout_below="@+id/bioEt"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@android:drawable/btn_radio" />
+
+        <!-- tabla de otros datos -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/bioTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="La informacion bio del usuario"
+                    android:textAlignment="center"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nombre" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Nombre del Medicamento" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Cantidad"/>
+
+                <TextView
+                    android:id="@+id/phoneTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Cantidad del Medicamento"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tiempo"/>
+
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Tiempo en Farmacia" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Fecha"/>
+
+                <TextView
+                    android:id="@+id/dobTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Fecha del Vencimiento" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Fecha de Registro" />
+
+                <TextView
+                    android:id="@+id/addedTimeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Registro del Medicamento" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Fecha Actualizacion"/>
+
+                <TextView
+                    android:id="@+id/updateTimeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Registro de Actualizacion de Fecha y Hora" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

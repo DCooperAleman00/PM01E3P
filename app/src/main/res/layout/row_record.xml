@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toStartOf="@id/moreBtn"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_toLeftOf="@id/moreBtn">
+
+            <!--Nombre de Usuario-->
+            <TextView
+                android:id="@+id/nameTv"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Telefono de Usuario-->
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+ />
+
+            <!--Email de Usuario-->
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad" />
+
+            <!--Fecha de Usuario-->
+            <TextView
+                android:id="@+id/dobTv"
+                android:text="Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!--Para mostrar opciones como eliminar, editar, etc.-->
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+ />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

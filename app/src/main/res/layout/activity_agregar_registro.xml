@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarRegistroActivity">
+
+    <!-- ImageView: Imagen Perfil-->
+
+
+    <!-- EditText: Nombre de Usuario-->
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Nombre del Medicamento"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <!-- EditText: Telefono de Usuario-->
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Cantidad"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <!-- EditText: Email de Usuario-->
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Tiempo en Farmacia"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <!-- EditText: DOB de Usuario-->
+    <EditText
+        android:id="@+id/dobEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Fecha de Venimiento"
+        android:inputType="date"
+        android:padding="10dp" />
+
+    <!-- EditText: Bio Info de Usuario-->
+    <EditText
+        android:id="@+id/bioEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="start"
+        android:hint="Descripción "
+        android:inputType="textCapSentences|textMultiLine"
+        android:minHeight="90dp"
+        android:padding="10dp" />
+
+    <!-- FAB: Agregar Registro-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="#E41E0F" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="622dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="90dp"
+        android:text="©PROGRAMACION MOVIL 1 " />
+
+    <ImageView
+        android:id="@+id/profileIv2"
+        android:layout_width="211dp"
+        android:layout_height="177dp"
+        android:layout_below="@+id/bioEt"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@android:drawable/btn_radio" />
+
+
+</RelativeLayout>
